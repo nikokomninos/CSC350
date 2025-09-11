@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Niko's Blog - Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+
+  <header id="navbar">
+    <a href="index.html" id="navbar-button"
+      ><h4 style="font-weight: normal">Home</h4></a
+    >
+    <a href="projects.html" id="navbar-button"
+      ><h4 style="font-weight: normal">Personal Projects</h4></a
+    >
+    <a href="programs.html" id="navbar-button"
+      ><h4 style="font-weight: normal">Programs I Love</h4></a
+    >
+    <a href="hobbies.html" id="navbar-button"
+      ><h4 style="font-weight: normal">Hobbies</h4></a
+    >
+  </header>
+
+  <body>
+    <div id="main">
+      <div class="post">
+        <h1>
+          Distronator : A Distribution-agnostic Bash Configuration Script
+          Generator
+        </h1>
+        <h4 style="font-weight: normal">
+          Stack :: <i>NextJS / TailwindCSS / FastAPI / PostgreSQL</i>
+        </h4>
+        <p>
+          Currently, I am working on a web app called <i>Distronator</i>,
+          inspired by
+          <a href="https://github.com/ChrisTitusTech/winutil"
+            >ChrisTitusTech's Windows Utility</a
+          >. I'm a big Linux guy, I've been using it for almost five years now.
+          I've found that the hardest thing for new users to grasp is
+          configuration. The post-install process of any Linux is usually
+          automated by many long-time users, who opt to write their own Bash
+          scripts that automate the entire process, usually installing all of
+          their favorite programs, configuring them how they like, and changing
+          some system settings. The unacquainted new Linux user has no idea
+          about any of these things! Granted, they will learn over time, but
+          what if there was a useful tool to automatically generate Bash scripts
+          to do <i>everything</i> somebody could want set up on their system
+          from the get-go?
+        </p>
+
+        <p>
+          This is where I got the idea for <i>Distronator</i>, a web-app that
+          functions like ChrisTitusTech's Windows Utility, with an interface
+          akin to <a href="https://pcpartpicker.com/">PCPartPicker</a>.
+          Initially, I want it to be just a configuration script generator.
+          However, if it were to gain traction, I'd love to make a section where
+          people can share their configurations for whatever they want, whether
+          it be their <code>.bashrc</code>, their
+          <code>nvim</code> configuration, or just cool scripts they use in
+          their workflow.
+        </p>
+      </div>
+
+      <div class="post">
+        <h1>PachinGO! : A spiritual successor to <i>Peggle</i></h1>
+        <h4 style="font-weight: normal">
+          Stack: <i>Construct 3 / ExpressJS / MongoDB </i>
+        </h4>
+        <img
+          src="img/pachingo.png"
+          alt="The current logo for PachinGO!"
+          style="
+            float: right;
+            width: 25%;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          "
+        />
+        <p>
+          <i>PachingGO!</i> is my senior seminar project. Myself and two others
+          are building a spiritual successor to Popcap's beloved game
+          <i>Peggle</i>, playable in the web browser. The big distinction
+          between our game and the original <i>Peggle</i> is our inclusion of a
+          level editor, allowing players to upload their own background images
+          and build levels around them, and ultimately uploading them to a
+          database for others to play.
+        </p>
+      </div>
+
+      <div class="post">
+        <h1>GamePile : A video game backlog manager</h1>
+        <h4 style="font-weight: normal">
+          Stack: <i>React / TailwindCSS / Tauri (Rust Backend) / SQLite</i>
+        </h4>
+        <img
+          src="img/gamepile.png"
+          alt="GamePile: Library screen"
+          style="
+            float: right;
+            width: 50%;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          "
+        />
+        <p><i>GamePile</i> is a semi offline-compatiable video game backlog manager inspired by sites such as <a href="ggapp.io">GGApp</a> This is a project I built mainly just to learn the frontend a lot more, namely React and TailwindCSS. The goal was to solve a problem that I was facing: practically every single video game backlog manager I have used is tied to a website. This means that my collection can disappear at the will of the maintainer. My goal was to create an offline-compatiable backlog manager, written natively with a Rust backend and utilizing a local SQLite database. It didn't turn out as I'd really hoped, as it was more of a learning experience than anything, and I realized how <strong>big</strong> the local database would get it if had to store all game info locally, including covers and screenshots. Even just caching the assets locally only for the games you add to your collection can grow in size super quick. So, ultimately, this didn't turn out to be a mature product. However, I'd love to rebuild it as a web app in the future, as I enjoyed adding features that I did not find in other services. The difficulty will come from building my own database of games, since all free ones are pretty subpar.</p>
+      </div>
+
+      <div class="post">
+        <h1>PL/0 Compiler</h1>
+        <h4 style="font-weight: normal">
+          Stack: <i>C++ / CMake</i>
+        </h4>
+        <p>
+          One of my earlier projects, a simple compiler for the minimized dialect of PL called PL/0. I never finished it, but it does currently have a working lexer and parser. I started working on a transpiler, so that it could transpile everything to C and then compile it with <code>gcc</code> or an equivalent C compiler
+        </p>
+      </div>
+
+      <div class="post">
+        <img
+          src="img/chip8.gif"
+          alt="GamePile: Library screen"
+          style="
+            float: right;
+            width: 50%;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          "
+        />
+        <h1>CHIP-8 Emulator</h1>
+        <h4 style="font-weight: normal">
+          Stack: <i>C / SDL</i>
+        </h4>
+        <p>
+          What I consider to be my first "real" project, I built a CHIP-8 emulator in C. I've always been very interested in hardware emulation, so I built the simplest emulator possible. It was a lot of fun.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
